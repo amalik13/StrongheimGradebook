@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GradeBook</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="panel panel-default">
+  <div class="panel-body">
+<div class="form-group">
+<form action="http://localhost:8080/StrongheimGradebook/strongGradebook" method="post">
+<!-- hidden input to let servlet know which form was used -->
+ <input type="hidden" name="hiddenAction" value="add">
+
+ <input class="form-control" type="studentid" name="studentid" required placeholder="Student ID"><br>
+ <input class="form-control" type="assignment" name="assignment" required placeholder="Assignment"><br>
+ <input class="form-control" type="type" name="type" required placeholder="Type"><br>
+ <input class="form-control" type="date" name="date" required placeholder="Date"><br>
+ <input class="form-control" type="grade" name="grade" required placeholder="Grade"><br>
+
+
+<label>&nbsp;</label>
+ <input type="submit" value="Enter" id="submit">
+ </form>
+ </div>
+ </div>
+ </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+ </body>
+</html>
+</html>
